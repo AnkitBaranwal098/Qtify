@@ -1,0 +1,11 @@
+.heroWrapper {
+  display: flex;
+  justify-content: center;
+  height: 270px;
+  width: 100vw;
+}
+
+.sloganContainer {
+  margin-top: 97px;
+  margin-bottom: 73px;
+}

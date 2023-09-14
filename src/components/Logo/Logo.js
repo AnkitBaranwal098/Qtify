@@ -1,9 +1,9 @@
 import React from 'react'
-import Icon from "../../assets/Group 1.png"
 
-const Logo = () => {
+const Logo = ({Icon, width=0, height=0}) => {
+  console.log(width, height)
   return (
-    <img src={Icon} width={67} alt='Logo-Icon'/>
+    <img src={Icon} width={width} alt='Logo-Icon'/>
   )
 }
 
