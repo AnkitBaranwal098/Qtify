@@ -1,14 +1,17 @@
 import React from "react";
 import styles from "./CardTile.module.css";
 import Card from "../Card/Card";
-const CardTile = () => {
+const CardTile = ({song}) => {
+
+  const {image, follows, title} = song;
+
   return (
     <div className={styles.cardTile}>
       <div>
-        <Card />
+        <Card image={image} follows={follows} />
       </div>
       <div className={styles.tileName}>
-        <h4>New Bollywood</h4>
+        <h4>{title}</h4>
       </div>
     </div>
   );
